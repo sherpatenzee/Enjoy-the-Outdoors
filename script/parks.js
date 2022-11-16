@@ -76,15 +76,15 @@ function addOptionsOnLocation() {
 function addOptionsOnPark() {
 
     let searchByParkType = document.getElementById("searchByParkType");
-
+    searchByParkType.length = 0;
     let option = document.createElement("option");
     option.value = "";
-    option.text = "Search By Park Type";
+    option.text = "Please Select a Park Type";
     searchByParkType.appendChild(option);
 
     for (let park of parkTypesArray) {
         let parkOption = document.createElement("option");
-        parkOption.value = "";
+        parkOption.value = park;
         parkOption.textContent = park;
         searchByParkType.appendChild(parkOption);
 
@@ -95,7 +95,7 @@ function addOptionsOnPark() {
 
 function searchByLocationOnChange() {
 
-   document.getElementById("parksDescription").style.display = "none";
+    document.getElementById("parksDescription").style.display = "none";
 
     let searchByLocation = document.getElementById("searchByLocation").value;
 
@@ -112,13 +112,13 @@ function searchByLocationOnChange() {
 
         if (searchByLocation == place.State) {
 
-            let paragraph = document.createElement("p");
+            //let paragraph = document.createElement("p");
             let newOption = document.createElement("option");
             newOption.value = place.LocationName;
             newOption.text = place.LocationName;
             result.appendChild(newOption);
 
-            document.getElementById("myDiv").appendChild(paragraph);
+            //document.getElementById("myDiv").appendChild(paragraph);
 
             result.style.display = "block";
 
@@ -135,30 +135,45 @@ function searchByLocationOnChange() {
 
 
 
+
 function searchByParkOnChange() {
+   
+
+    document.getElementById("parksDescription").style.display = "none";
 
     let searchByParkType = document.getElementById("searchByParkType").value;
-    let parksDescription = document.getElementById("parksDescription");
+
+    let result = document.getElementById("resultLocation");
+
+    result.length = 0;
+
+    let option = document.createElement("option");
+    option.value = "";
+    option.text = "Please Select a Park Type " ;
+    result.appendChild(option);
 
     for (let park of nationalParksArray) {
 
-        if (searchByParkType) {
+        if (park.LocationName.indexOf(searchByParkType) != -1) {
+
+            let newOption = document.createElement("option");
+            newOption.value = park.LocationName;
+            newOption.text = park.LocationName;
+            result.appendChild(newOption);
 
 
+            result.style.display = "block";
 
-            parksDescription.style.display = "block"
-            parksDescription.innerHTML = "<span style='color: white;'>Name : </span>" + park.LocationName + "<br/>" + "<span style='color: white;'>Address : </span>" + park.Address + "<br/>" + "<span style='color: white;'>City : </span>" + park.City + "<br/>" + "<span style='color: white;'>State : </span>" + park.State + "<br/>" + "<span style='color: white;'>Zip Code : </span>" + park.ZipCode;
+        } else if (searchByLocation == "") {
 
+            result.style.display = "none"
         }
-
-
-
 
     }
 
 
-
 }
+
 
 
 function displayResultOnChange() {
@@ -170,8 +185,6 @@ function displayResultOnChange() {
 
         if (result.value == park.LocationName) {
 
-            console.log("hello")
-
             parksDescription.style.display = "block"
             parksDescription.innerHTML = "<span style='color: white;'>Name : </span>" + park.LocationName + "<br/>" + "<span style='color: white;'>Address : </span>" + park.Address + "<br/>" + "<span style='color: white;'>City : </span>" + park.City + "<br/>" + "<span style='color: white;'>State : </span>" + park.State + "<br/>" + "<span style='color: white;'>Zip Code : </span>" + park.ZipCode;
 
@@ -179,12 +192,6 @@ function displayResultOnChange() {
             parksDescription.style.display = "none"
 
         }
-
-
-
-
     }
-
-
 
 }
