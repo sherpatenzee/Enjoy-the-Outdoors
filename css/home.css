@@ -1,0 +1,31 @@
+.bg-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#mountainDescriptions{
+  background-color: rgba(0, 0, 0, 0.325);
+  opacity: 100%;;
+  
+}
+
+#imgId{
+  height: 300px;
+  width: 400px;
+}
+*{
+  margin:auto;
+  padding: auto;
+  
+}
+
+
+body{
+  font-family: 'Merriweather', serif;
+ font-family: 'Poppins', sans-serif;
+ 
+ }
+
+ 
