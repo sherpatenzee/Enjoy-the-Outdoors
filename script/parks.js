@@ -14,13 +14,15 @@ window.onload = function () {
     let resultLocation = document.getElementById("resultLocation");
     resultLocation.onchange = displayResultOnChange;
 
+ 
+  
 
 
 
     document.getElementById("searchByLocation").style.display = "none";
     document.getElementById("searchByParkType").style.display = "none";
     document.getElementById("resultLocation").style.display = "none";
-
+    document.getElementById("parksDescription").style.display="none";
 }
 
 function addDropdowns() {
@@ -55,7 +57,7 @@ function addDropdowns() {
 
 
 function addOptionsOnLocation() {
-
+  
     let searchByLocation = document.getElementById("searchByLocation");
 
     let newOption = document.createElement("option");
@@ -74,22 +76,24 @@ function addOptionsOnLocation() {
 
 
 function addOptionsOnPark() {
-
+    
+  
     let searchByParkType = document.getElementById("searchByParkType");
     searchByParkType.length = 0;
     let option = document.createElement("option");
     option.value = "";
     option.text = "Please Select a Park Type";
     searchByParkType.appendChild(option);
+   
 
     for (let park of parkTypesArray) {
         let parkOption = document.createElement("option");
         parkOption.value = park;
         parkOption.textContent = park;
         searchByParkType.appendChild(parkOption);
-
+       
     }
-
+  
 }
 
 
@@ -105,7 +109,7 @@ function searchByLocationOnChange() {
 
     let newOption = document.createElement("option");
     newOption.value = "";
-    newOption.text = "Please Select a Park " ;
+    newOption.text = "Please Select a Park ";
     result.appendChild(newOption);
 
     for (let place of nationalParksArray) {
@@ -137,19 +141,21 @@ function searchByLocationOnChange() {
 
 
 function searchByParkOnChange() {
-   
 
+  
     document.getElementById("parksDescription").style.display = "none";
-
+   
+   
     let searchByParkType = document.getElementById("searchByParkType").value;
 
     let result = document.getElementById("resultLocation");
+   
 
     result.length = 0;
 
     let option = document.createElement("option");
     option.value = "";
-    option.text = "Please Select a Park Type " ;
+    option.text = "Please Select a Park ";
     result.appendChild(option);
 
     for (let park of nationalParksArray) {
@@ -161,22 +167,18 @@ function searchByParkOnChange() {
             newOption.text = park.LocationName;
             result.appendChild(newOption);
 
-
             result.style.display = "block";
 
-        } else if (searchByLocation == "") {
+        }   else if (searchByParkType == "") {
 
             result.style.display = "none"
-        }
+         }
 
     }
-
-
 }
 
-
-
 function displayResultOnChange() {
+
 
     let result = document.getElementById("resultLocation");
     let parksDescription = document.getElementById("parksDescription");

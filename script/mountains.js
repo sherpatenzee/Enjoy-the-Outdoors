@@ -3,7 +3,9 @@
 
 window.onload = function () {
 
-  const mountainsList = document.getElementById("mountainsList")
+  const mountainsList = document.getElementById("mountainsList");
+  const mountainDescriptions = document.getElementById("mountainDescriptions").style.display = "none";
+  
 
   mountainsList.onchange = mountainSelectOnChange;
 
@@ -40,6 +42,7 @@ function mountainSelectOnChange() {
 
     if (mountainSelect == mountain.name) {
 
+      mountainDescriptions.style.display = "block"
       mountainDescriptions.innerHTML = "<span style='color: white;'>Name :</span>" + mountain.name + "<br/>" + "<span style='color: white;'>Elevation :</span>" + mountain.elevation + " ft" + "<br/>" + "<span style='color: white;'>Description :</span>" + mountain.desc;
 
       createDiv();
@@ -48,6 +51,7 @@ function mountainSelectOnChange() {
     } else if (mountainSelect == "") {
       mountainDescriptions.innerHTML = ""
       myDiv.style.display = "none";
+      mountainDescriptions.style.display = "none"
     }
   }
 
@@ -55,8 +59,8 @@ function mountainSelectOnChange() {
 
 
 function createDiv() {
-  let myDiv = document.getElementById("myDiv");
 
+  let myDiv = document.getElementById("myDiv");
 
   let newDiv = document.createElement("div");
   newDiv.id = "divId";
@@ -68,7 +72,6 @@ function createDiv() {
   for (let images of mountainsArray) {
 
     if (mountainsList.value == images.name) {
-
 
       let newImg = document.createElement("img");
       newImg.id = "imgId";

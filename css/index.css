@@ -1,6 +1,6 @@
  body{
   font-family: 'Merriweather', serif;
- font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
  }
  
 #myVideo{
@@ -40,3 +40,12 @@
 .text p {
   opacity:50%;
 }
+
+.row{
+  position: absolute;
+  margin-top: 400px;
+  opacity: 75%;
+  
+}
+
+
