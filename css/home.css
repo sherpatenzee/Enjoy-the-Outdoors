@@ -1,13 +1,16 @@
 .bg-image{
-  background-repeat: no-repeat;
+  background-repeat:repeat;
   background-size: cover;
+
 }
 
 
 
 #mountainDescriptions{
-  background-color: rgba(0, 0, 0, 0.325);
-  opacity: 100%;;
+  /* background-color: rgba(160, 59, 29, 0.534); */
+  opacity: 100%;
+  border-radius: 25px;
+  
   
 }
 
@@ -38,3 +41,26 @@ body{
  #mountainDescriptions{
   padding: 25px;
  }
+
+ .form-select{
+
+width: 550px;
+text-align: center;
+margin: auto;
+}
+
+h2{
+  color:rgba(176, 116, 56, 0.895)
+}
+
+.cardHeading{
+  color:antiquewhite;
+  margin: 25px;
+  
+}
+
+.card-text{
+  color:aliceblue;
+  text-align: center;
+}
+

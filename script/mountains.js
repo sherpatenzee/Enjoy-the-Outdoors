@@ -76,7 +76,7 @@ function createDiv() {
       let newImg = document.createElement("img");
       newImg.id = "imgId";
       newImg.src = images.img;
-      newImg.className = "card"
+      newImg.className = ""
 
       newDiv.appendChild(newImg);
 
