@@ -1,14 +1,19 @@
 
 .bg-image{
-  background-repeat:repeat;
+ 
   background-size: cover;
-
+  background-image: url('../images/daniel-leone-g30P1zcOzXo-unsplash.jpg');
+  position: fixed;
+  height:100%; width: 100%;
+  top:0;
+  left:0;
+  z-index: -1000;
 }
 
 
 
 #mountainDescriptions{
-  /* background-color: rgba(160, 59, 29, 0.534); */
+  background-color: rgba(39, 37, 37, 0.239);
   opacity: 100%;
   border-radius: 25px;
   
