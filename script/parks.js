@@ -119,8 +119,6 @@ function searchByLocationOnChange() {
             newOption.text = place.LocationName;
             result.appendChild(newOption);
 
-            //document.getElementById("myDiv").appendChild(paragraph);
-
             result.style.display = "block";
 
         } else if (searchByLocation == "") {

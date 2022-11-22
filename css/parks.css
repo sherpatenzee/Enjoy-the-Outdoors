@@ -4,16 +4,6 @@
   
 }
 
-.bg-image{
- 
-  background-size: cover;
-  background-image: url('../images/jennifer-rogalla-HleqO6kuL9c-unsplash.jpg');
-  position: fixed;
-  height:100%; width: 100%;
-  top:0;
-  left:0;
-  z-index: -1000;
-}
 
 body{
   font-family: 'Merriweather', serif;
@@ -22,7 +12,7 @@ body{
  }
 
  .card{
-  background-color: rgba(34, 33, 31, 0.334);
+  background-color: hsla(60, 1%, 19%, 0.371);
   padding: 25px;
  }
 
@@ -34,4 +24,10 @@ body{
   margin: auto;
   }
 
-  
+  #myVideo{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+   
+  }

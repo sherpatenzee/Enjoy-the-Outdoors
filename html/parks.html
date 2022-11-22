@@ -13,86 +13,82 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Poppins:ital,wght@0,700;1,700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="../css/parks.css">
+  <link rel="stylesheet" href="../css/parks.css">
 
 </head>
 
 <body>
   <main>
 
-    <div id="bg-image" class="bg-image" style="
-       
-        height: 100vh;
-      ">
-
-      <header>
-
-        <nav class="navbar navbar-expand-md navbar-scroll  ">
-          <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item ">
-                  <a class="nav-link r" href="index.html">
-                    <h5>Home</h5>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="parks.html">
-                    <h5>National Parks</h5>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link align-content-center" href="mountains.html">
-                    <h5>Mountains</h5>
-                  </a>
-                </li>
-              </ul>
-
-            </div>
-          </div>
-        </nav>
-
-      </header>
-
-
-      <section>
-
-        <div id="selects">
-
-          <select id="SearchFilter" class="form-select text-bg-dark opacity-75 mb-3  ">
-            <option id="default">Search Parks by!</option>
-            <option id="location">Location</option>
-            <option id="parkType">Park Type</option>
-          </select>
-
-          <select id="searchByLocation" class="form-select text-bg-dark opacity-75 mb-3  "></select>
-
-          <select id="searchByParkType" class="form-select text-bg-dark opacity-75 mb-3  "></select>
-
-          <select id="resultLocation" class="form-select text-bg-dark opacity-75 mb-3"></select>
-
-
-        </div>
-
-
-        <div id="parksDescription" class="card" style="width: 35rem; height: 16rem;">
-        </div>
-
-      </section>
-
-
-
+    <div class="bgVideo">
+      <video autoplay loop muted id="myVideo">
+        <source src="../video/parks loop.mp4" type="video/mp4">
+      </video>
     </div>
+   
+    <header>
+
+      <nav class="navbar navbar-expand-md navbar-scroll  ">
+        <div class="container-fluid ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item ">
+                <a class="nav-link r" href="index.html">
+                  <h5>Home</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="parks.html">
+                  <h5>National Parks</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link align-content-center" href="mountains.html">
+                  <h5>Mountains</h5>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+   
+    <section>
+
+      <div id="selects">
+
+        <select id="SearchFilter" class="form-select text-bg-dark opacity-75 mb-3  ">
+          <option id="default">Search Parks by!</option>
+          <option id="location">Location</option>
+          <option id="parkType">Park Type</option>
+        </select>
+
+        <select id="searchByLocation" class="form-select text-bg-dark opacity-75 mb-3  "></select>
+
+        <select id="searchByParkType" class="form-select text-bg-dark opacity-75 mb-3  "></select>
+
+        <select id="resultLocation" class="form-select text-bg-dark opacity-75 mb-3"></select>
+
+
+      </div>
+
+
+      <div id="parksDescription" class="card" style="width: 35rem; height: 16rem;">
+      </div>
+
+    </section>
 
   </main>
 
 
-  
   <script src="../script/parks.js"></script>
   <script src="../script/parkTypeData.js"></script>
   <script src="../script/locationData.js"></script>
