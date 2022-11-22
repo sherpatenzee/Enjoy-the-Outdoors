@@ -1,70 +1,69 @@
+.bg-image {
 
-.bg-image{
- 
   background-size: cover;
   background-image: url('../images/daniel-leone-g30P1zcOzXo-unsplash.jpg');
   position: fixed;
-  height:100%; width: 100%;
-  top:0;
-  left:0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   z-index: -1000;
+
+
 }
 
 
-
-#mountainDescriptions{
-  background-color: rgba(39, 37, 37, 0.239);
+#mountainDescriptions {
+  background-color: rgba(50, 47, 47, 0.479);
   opacity: 100%;
   border-radius: 25px;
   padding: 25px;
 }
 
-#imgId{
+#imgId {
   height: 300px;
   width: 400px;
-  margin:auto
+  margin: auto
 }
 
-*{
-  margin:auto;
+* {
+  margin: auto;
   padding: auto;
-  
+
 }
 
 
-body{
+body {
   font-family: 'Merriweather', serif;
- font-family: 'Poppins', sans-serif;
- 
- }
+  font-family: 'Poppins', sans-serif;
 
- .card{
+}
+
+.card {
   background-color: rgba(34, 33, 31, 0.334);
   padding: 25px;
-  
- }
-
- 
-
- .form-select{
-
-width: 550px;
-text-align: center;
-margin: auto;
 }
 
-h2{
-  color:rgba(176, 116, 56, 0.895)
+
+
+.form-select {
+
+  width: 550px;
+  text-align: center;
+  margin: auto;
 }
 
-.cardHeading{
-  color:antiquewhite;
+h2 {
+  color: rgba(176, 116, 56, 0.895)
+}
+
+.cardHeading {
+  color: antiquewhite;
   margin: 25px;
-  
+
 }
 
-.card-text{
-  color:aliceblue;
+.card-text {
+  color: aliceblue;
   text-align: center;
 }
-

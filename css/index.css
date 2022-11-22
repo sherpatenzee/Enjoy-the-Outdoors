@@ -1,54 +1,49 @@
-
-
-
-body{
+body {
   font-family: 'Merriweather', serif;
   font-family: 'Poppins', sans-serif;
- }
- 
-#myVideo{
+}
+
+#myVideo {
   position: absolute;
   object-fit: cover;
   height: 100%;
   width: 100%;
- 
+
 }
 
 
-*{
-  margin:auto;
+* {
+  margin: auto;
   padding: auto;
-  
+
 }
 
-.text{
+.text {
   position: absolute;
   z-index: 10;
   color: white;
   padding: 100px;
   opacity: 100%;
   margin-top: 50px;
- 
+
 }
 
-.text h2{
+.text h2 {
   font-size: 5em;
   font-weight: 800;
   line-height: 1em;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   opacity: 75%;
-  
+
 }
 
 .text p {
-  opacity:50%;
+  opacity: 50%;
 }
 
-.row{
+.row {
   position: absolute;
   margin-top: 350px;
   opacity: 75%;
-  
+
 }
-
-

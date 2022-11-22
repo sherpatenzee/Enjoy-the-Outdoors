@@ -10,8 +10,6 @@ window.onload = function () {
 
   populateMountain();
 
-  
-
 }
 
 function populateMountain() {
@@ -44,12 +42,12 @@ function mountainSelectOnChange() {
     if (mountainSelect == mountain.name) {
 
       mountainDescriptions.style.display = "block"
-      mountainDescriptions.innerHTML = "<span style='color: white;'>Name :</span>" + mountain.name + "<br/>" + "<span style='color: white;'>Elevation :</span>" + mountain.elevation + " ft" + "<br/>" + "<span style='color: white;'>Description :</span>" + mountain.desc  + "<br>" + "<span style='color: white;'>Latitude : </span>" + mountain.coords.lat + "<br>" + "<span style='color: white;'>Longitude : </span> " + mountain.coords.lng;
+      mountainDescriptions.innerHTML = "<span style='color: white;'>Name :</span>" + mountain.name + "<br/>" + "<span style='color: white;'>Elevation :</span>" + mountain.elevation + " ft" + "<br/>" + "<span style='color: white;'>Description :</span>" + mountain.desc + "<br>" + "<span style='color: white;'>Latitude : </span>" + mountain.coords.lat + "<br>" + "<span style='color: white;'>Longitude : </span> " + mountain.coords.lng;
 
       getSunsetForMountain(mountain.coords.lat, mountain.coords.lng).then(data => {
-          mountainDescriptions.innerHTML += "<br>" + "<span style='color: white;'>Sunrise Time : </span>" + data.results.sunrise +  "<br>" + "<span style='color: white;'>Sunset Time : </span>" + data.results.sunset;
+        mountainDescriptions.innerHTML += "<br>" + "<span style='color: white;'>Sunrise Time : </span>" + data.results.sunrise + "<br>" + "<span style='color: white;'>Sunset Time : </span>" + data.results.sunset;
       });
-      
+
       createDiv();
       myDiv.style.display = "block";
 
@@ -91,8 +89,10 @@ function createDiv() {
 
 }
 
-async function getSunsetForMountain(lat, lng){
-  let response = await fetch( `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
-     let data = await response.json();
-     return data;
-  }
+async function getSunsetForMountain(lat, lng) {
+  let response = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
+  let data = await response.json();
+  return data;
+}
+
+

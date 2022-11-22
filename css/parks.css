@@ -1,33 +1,34 @@
-*{
-  margin:auto;
+* {
+  margin: auto;
   padding: auto;
-  
+
 }
 
 
-body{
+body {
   font-family: 'Merriweather', serif;
- font-family: 'Poppins', sans-serif;
- 
- }
+  font-family: 'Poppins', sans-serif;
 
- .card{
+}
+
+.card {
   background-color: hsla(60, 1%, 19%, 0.371);
   padding: 25px;
- }
+}
 
 
- .form-select{
+.form-select {
 
   width: 550px;
   text-align: center;
   margin: auto;
-  }
+}
 
-  #myVideo{
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-   
-  }
+#myVideo {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+}
