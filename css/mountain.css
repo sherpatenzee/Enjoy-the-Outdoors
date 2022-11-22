@@ -16,8 +16,7 @@
   background-color: rgba(39, 37, 37, 0.239);
   opacity: 100%;
   border-radius: 25px;
-  
-  
+  padding: 25px;
 }
 
 #imgId{
@@ -25,6 +24,7 @@
   width: 400px;
   margin:auto
 }
+
 *{
   margin:auto;
   padding: auto;
@@ -43,11 +43,6 @@ body{
   padding: 25px;
  }
 
-
- 
- #mountainDescriptions{
-  padding: 25px;
- }
 
  .form-select{
 
