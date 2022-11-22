@@ -184,7 +184,7 @@ function displayResultOnChange() {
         if (result.value == park.LocationName) {
 
             parksDescription.style.display = "block"
-            parksDescription.innerHTML = "<span style='color: white;'>Name : </span>" + park.LocationName + "<br/>" + "<span style='color: white;'>Address : </span>" + park.Address + "<br/>" + "<span style='color: white;'>City : </span>" + park.City + "<br/>" + "<span style='color: white;'>State : </span>" + park.State + "<br/>" + "<span style='color: white;'>Zip Code : </span>" + park.ZipCode + "<br/>" + "<span style='color: white;'>Latitude : </span>" + park.Latitude + "<br/>" + "<span style='color: white;'>Longitude : </span>" + park.Longitude + "<br/>";
+            parksDescription.innerHTML = "<span style='color: white ; '>Name : </span>" + park.LocationName + "<br/>" + "<span style='color: white;'>Address : </span>" + park.Address + "<br/>" + "<span style='color: white;'>City : </span>" + park.City + "<br/>" + "<span style='color: white;'>State : </span>" + park.State + "<br/>" + "<span style='color: white;'>Zip Code : </span>" + park.ZipCode + "<br/>" + "<span style='color: white;'>Latitude : </span>" + park.Latitude + "<br/>" + "<span style='color: white;'>Longitude : </span>" + park.Longitude + "<br/>";
 
         } else if (result.value == "") {
             parksDescription.style.display = "none"

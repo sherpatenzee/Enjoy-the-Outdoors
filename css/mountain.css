@@ -1,5 +1,4 @@
 .bg-image {
-
   background-size: cover;
   background-image: url('../images/daniel-leone-g30P1zcOzXo-unsplash.jpg');
   position: fixed;
@@ -8,7 +7,6 @@
   top: 0;
   left: 0;
   z-index: -1000;
-
 
 }
 
@@ -40,8 +38,9 @@ body {
 }
 
 .card {
-  background-color: rgba(34, 33, 31, 0.334);
-  padding: 25px;
+  background-color: rgba(34, 33, 31, 0.719);
+  padding: 5px;
+  
 }
 
 
@@ -66,4 +65,16 @@ h2 {
 .card-text {
   color: aliceblue;
   text-align: center;
+}
+.bg-imageExplore{
+
+  background-size: cover;
+  background-image: url('../images/jennifer-rogalla-HleqO6kuL9c-unsplash.jpg');
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+
 }
